@@ -1,0 +1,100 @@
+@import '../variables';
+@import '../mixins';
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $main-max-width) {
+    padding: 0 20px;
+  }
+  @media (max-width: $breakpoint-mobile-width) {
+    padding: 0 10px;
+  }
+
+  &__header {
+    width: 100%;
+  }
+
+  &__logo {
+    width: 220px;
+    margin: 20px 0;
+  }
+
+  &__item {
+    width: 49%;
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &--left {
+      margin-right: 2%;
+    }
+    &--large {
+      width: 100%;
+    }
+    &--right-link {
+      justify-content: flex-end;
+    }
+  }
+  &__description {
+    text-align: left;
+    font-weight: normal;
+    font-size: 12px;
+    width: 100%;
+    line-height: 1.4em;
+    margin: 20px 0 0;
+    padding: 0 30% 0 0;
+
+    &--large {
+      width: 70%;
+    }
+
+    @media (max-width: $breakpoint-tablet-width) {
+      padding: 0 10% 0 0;
+    }
+  }
+  &__description-span {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  &__link {
+    padding: 0;
+    margin: 20px 0 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+
+  &__photo {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    &--video {
+      transform: scale(0.5) translate(40px, -40px);
+      @media (max-width: $breakpoint-tablet-width) {
+        transform: scale(0.5) translate(10px, -10px);
+      }
+    }
+  }
+
+  &__video {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(0.5) translate(-40px, 40px);
+  }
+}

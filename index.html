@@ -2,12 +2,285 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/dot.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Gino Rossi Summer Perspective</title>
   </head>
   <body>
-    <div id="app"></div>
+    <main class="main">
+      <header class="header">
+        <div class="header__photo">
+          <img
+            class="gallery__image"
+            src="./src/assets/images/main-photo.jpg"
+            alt="Gino Rossi main photo"
+          />
+          <h2 class="header__title">SUMMER</h2>
+        </div>
+        <div class="header__description">
+          <video class="header__video" autoplay muted loop>
+            <source src="./src/assets/video/water.mp4" type="video/mp4" />
+          </video>
+          <h2 class="header__title">PERSPECTIVE</h2>
+          <span class="header__subtitle"
+            >Zmień perspektywę na letnią z najnowszą kolekcją Gino Rossi. Oto Twoja klasyka
+            gatunku.</span
+          >
+        </div>
+      </header>
+
+      <section class="gallery">
+        <header class="gallery__header">
+          <img
+            class="gallery__logo"
+            src="./src/assets/images/gino-rossi-logo.svg"
+            alt="Gino Rossi logo"
+          />
+        </header>
+
+        <article class="gallery__item gallery__item--left">
+          <figure class="gallery__photo">
+            <img
+              class="gallery__image"
+              src="./src/assets/images/photo-1.jpg"
+              alt="Gino Rossi photo"
+            />
+          </figure>
+          <h3 class="gallery__description">
+            <span class="gallery__description-span">Spójrz na sprawę po swojemu. </span> Przecież
+            dobrze wiesz, że mniej to więcej.
+          </h3>
+          <span class="gallery__link">ZOBACZ</span>
+        </article>
+
+        <article class="gallery__item">
+          <figure class="gallery__photo">
+            <img
+              class="gallery__image"
+              src="./src/assets/images/photo-2.jpg"
+              alt="Gino Rossi photo"
+            />
+          </figure>
+          <h3 class="gallery__description">
+            <span class="gallery__description-span">Punkt widzenia zależy od punktu… widzenia</span>
+            Szlachetny minimalizm sprawdzi się w każdych warunkach.
+          </h3>
+          <span class="gallery__link">ZOBACZ</span>
+        </article>
+
+        <article class="gallery__item gallery__item--left">
+          <figure class="gallery__photo">
+            <video class="gallery__video" autoplay muted loop>
+              <source src="./src/assets/video/water.mp4" type="video/mp4" />
+            </video>
+            <img
+              class="gallery__image gallery__image--video"
+              src="./src/assets/images/photo-3.jpg"
+              alt="Gino Rossi photo"
+            />
+          </figure>
+          <h3 class="gallery__description">
+            <span class="gallery__description-span">Tego lata weź głęboki oddech,</span> wsłuchaj
+            się w siebie i doświadcz doskonałości.
+          </h3>
+        </article>
+
+        <article class="gallery__item gallery__item--right-link">
+          <figure class="gallery__photo">
+            <img
+              class="gallery__image"
+              src="./src/assets/images/photo-4.jpg"
+              alt="Gino Rossi photo"
+            />
+          </figure>
+          <span class="gallery__link">ZOBACZ</span>
+        </article>
+
+        <article class="gallery__item gallery__item--left">
+          <figure class="gallery__photo">
+            <img
+              class="gallery__image"
+              src="./src/assets/images/photo-5.jpg"
+              alt="Gino Rossi photo"
+            />
+          </figure>
+          <h3 class="gallery__description">
+            <span class="gallery__description-span">Geometryczne formy.</span> Estetyczne zdobienia.
+            Czysta funkcjonalność.
+          </h3>
+          <span class="gallery__link">ZOBACZ</span>
+        </article>
+
+        <article class="gallery__item">
+          <figure class="gallery__photo">
+            <img
+              class="gallery__image"
+              src="./src/assets/images/photo-6.jpg"
+              alt="Gino Rossi photo"
+            />
+          </figure>
+          <h3 class="gallery__description">
+            <span class="gallery__description-span">Twoja ulubiona klasyka</span> nawet na
+            wakacjach? Gino Rossi wie, jak to zrobić.
+          </h3>
+          <span class="gallery__link">ZOBACZ</span>
+        </article>
+
+        <article class="gallery__item gallery__item--large">
+          <figure class="gallery__photo">
+            <img
+              class="gallery__image"
+              src="./src/assets/images/photo-large.jpg"
+              alt="Gino Rossi photo"
+            />
+          </figure>
+          <h3 class="gallery__description gallery__description--large">
+            <span class="gallery__description-span">Od nas dla Ciebie: </span> skomponuj swój letni
+            look, dopasuj kolory, dołącz dodatki.
+          </h3>
+          <span class="gallery__link">ZOBACZ</span>
+        </article>
+
+        <article class="gallery__item gallery__item--left">
+          <figure class="gallery__photo">
+            <img
+              class="gallery__image"
+              src="./src/assets/images/photo-7.jpg"
+              alt="Gino Rossi photo"
+            />
+          </figure>
+          <h3 class="gallery__description">
+            <span class="gallery__description-span">Najlepsze stylizacje </span> zaczynają się od
+            butów. Sprawdź, jak zacząć z Gino Rossi.
+          </h3>
+          <span class="gallery__link">ZOBACZ</span>
+        </article>
+
+        <article class="gallery__item">
+          <figure class="gallery__photo">
+            <img
+              class="gallery__image"
+              src="./src/assets/images/photo-8.jpg"
+              alt="Gino Rossi photo"
+            />
+          </figure>
+          <h3 class="gallery__description">
+            <span class="gallery__description-span">Spakuj, co chcesz.</span> Noś ją jak chcesz. Po
+            prostu.
+          </h3>
+          <span class="gallery__link">ZOBACZ</span>
+        </article>
+
+        <article class="gallery__item gallery__item--left">
+          <figure class="gallery__photo">
+            <video class="gallery__video" autoplay muted loop>
+              <source src="./src/assets/video/water.mp4" type="video/mp4" />
+            </video>
+            <img
+              class="gallery__image gallery__image--video"
+              src="./src/assets/images/photo-9.jpg"
+              alt="Gino Rossi photo"
+            />
+          </figure>
+          <h3 class="gallery__description">
+            <span class="gallery__description-span">Gustowna elegancja</span> na horyzoncie.
+            Niezawodna.
+          </h3>
+        </article>
+
+        <article class="gallery__item gallery__item--right-link">
+          <figure class="gallery__photo">
+            <img
+              class="gallery__image"
+              src="./src/assets/images/photo-10.jpg"
+              alt="Gino Rossi photo"
+            />
+          </figure>
+          <span class="gallery__link">ZOBACZ</span>
+        </article>
+      </section>
+
+      <section class="products">
+        <header class="products__header">
+          <h2 class="products__title">Ona</h2>
+          <a class="products__link">Zobacz wszystko</a>
+        </header>
+
+        <a class="products__item" href="#">
+          <img
+            class="products__image"
+            src="./src/assets/images/product-1.jpg"
+            alt="Gino Rossi product photo"
+          />
+          <h4 class="products__description">Torby</h4>
+        </a>
+        <a class="products__item" href="#">
+          <img
+            class="products__image"
+            src="./src/assets/images/product-2.jpg"
+            alt="Gino Rossi product photo"
+          />
+          <h4 class="products__description">Klapki</h4>
+        </a>
+        <a class="products__item" href="#">
+          <img
+            class="products__image"
+            src="./src/assets/images/product-3.jpg"
+            alt="Gino Rossi product photo"
+          />
+          <h4 class="products__description">Mokasyny</h4>
+        </a>
+        <a class="products__item products__item--last" href="#">
+          <img
+            class="products__image"
+            src="./src/assets/images/product-4.jpg"
+            alt="Gino Rossi product photo"
+          />
+          <h4 class="products__description">Jeszcze więcej toreb</h4>
+        </a>
+      </section>
+
+      <section class="products">
+        <header class="products__header">
+          <h2 class="products__title">On</h2>
+          <a class="products__link">Zobacz wszystko</a>
+        </header>
+
+        <a class="products__item" href="#">
+          <img
+            class="products__image"
+            src="./src/assets/images/product-5.jpg"
+            alt="Gino Rossi product photo"
+          />
+          <h4 class="products__description">Torby</h4>
+        </a>
+        <a class="products__item" href="#">
+          <img
+            class="products__image"
+            src="./src/assets/images/product-6.jpg"
+            alt="Gino Rossi product photo"
+          />
+          <h4 class="products__description">Klapki</h4>
+        </a>
+        <a class="products__item" href="#">
+          <img
+            class="products__image"
+            src="./src/assets/images/product-7.jpg"
+            alt="Gino Rossi product photo"
+          />
+          <h4 class="products__description">Półbuty</h4>
+        </a>
+        <a class="products__item products__item--last" href="#">
+          <img
+            class="products__image"
+            src="./src/assets/images/product-8.jpg"
+            alt="Gino Rossi product photo"
+          />
+          <h4 class="products__description">Jeszcze więcej butów</h4>
+        </a>
+      </section>
+    </main>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
